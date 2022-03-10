@@ -1,0 +1,10 @@
+#! /bin/bash
+
+ktlint
+
+if [[ $? == 1 ]] ; then
+	echo 'Cannot commit, fix problems first'
+	exit 1
+else
+	echo 'lgtm'
+fi
